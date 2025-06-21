@@ -223,6 +223,9 @@
   const btn2 = document.getElementById('btn2');
   let isProcessing = false;
 
+
+ 
+
   // 预加载函数（支持 AbortController 取消未完成的请求）
   function prefetchPage(url) {
     if (window.navigator.connection?.saveData) return; // 跳过省流模式
@@ -282,6 +285,16 @@
       isProcessing = false;
     }, 0);
   }
+
+ // 移除按钮的 active 类
+      btn1.classList.remove('active');
+      btn2.classList.remove('active');
+
+
+
+
+
+
 
   btn1.addEventListener('click', () => handleButtonClick(btn1, 'yj_ddimg.html'));
   btn2.addEventListener('click', () => handleButtonClick(btn2, 'yj_zzimg.html'));
