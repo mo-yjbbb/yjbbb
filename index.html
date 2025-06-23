@@ -133,10 +133,16 @@
     }
     
     .circle-button:hover {
-      color: var(--primary-color);
-      background-color: var(--secondary-color);
+      color: var(--white-color);
+      /* background-color: var(--secondary-color); */
       border-color: var(--secondary-color);
     }
+   
+
+
+
+
+
     
     .circle-button .icon {
       font-size: 40px;
@@ -178,12 +184,30 @@
     }
 
 
-    .circle-button.active {
+
+
+.circle-button.active {
   transform: scale(0.95);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  background: var(--secondary-color);
-  color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  /* 移除黄色背景和文字颜色变化 */
+  background: none; /* 保持按钮原有的渐变背景 */
+  color: var(--white); /* 保持白色文字 */
+  border-color: var(--white); /* 保持白色边框 */
 }
+
+.btn_01.active{background: linear-gradient(135deg, #0011ff 0%, #0066ff 100%);}
+.btn_02.active{background: linear-gradient(135deg, #ff4500 0%, #ff8c00 100%);}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .circle-button {
