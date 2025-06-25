@@ -284,6 +284,8 @@
     font-size: 20px;
     z-index: 1001; /* 确保按钮在图片上方 */
 }
+.tit_font{color: #e63d0f;font-weight: 800;}
+.popup-content p strong{font-weight: 800;font-size: 1.2rem;}
 
     </style>
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.min.js"></script>
@@ -295,11 +297,30 @@
 <div v-if="showPopup" class="popup-overlay">
   <div class="popup-box">
     <div class="popup-content">
-      <p><strong>📢 自助出餐标准：</strong><br>1.放题下单按一位人数，白贝/美贝照单出，<br>活虾肥牛首上两份，其他都是上一份， <br>加单的白贝美贝照单出，厨房人员要严格执行，<br>传菜员告知顾客制作需要时间先给您出单不够可以再点.
-<br>2.青龙及花螺/花甲/鲍鱼的咸度不能低于20°。
-<br>3.鸡/牛肉/玉米饺子/午餐肉.展示柜售卖时间为2天，超过2天转做员工餐。
-<br>4.肉类冰箱0至6度/蔬菜2～8度/两个底部的小冰箱保鲜3～6。<br>5.菜品图片已更新，暂无带子图片</p>
-    </div>
+<p><strong>📢 放题类出餐标准及服务规范：</strong><br>
+<span class="tit_font">一、首单标准：</span><br>
+1、白贝/美贝照单出：人均5份；花螺：人均1份（首单与加单标准一致）<br>
+2、活虾、肥牛：人均2份；其他都是上一份<br>
+
+<span class="tit_font">二、加单标准：</span><br>
+1、白贝、美贝：每人每次加单2份<br>
+2、其他品类：每人每次加单1份<br>
+
+<span class="tit_font">三、服务执行规范：</span><br>
+1、厨房严格按上述标准控制出餐量<br>
+2、传菜需告知顾客"菜品制作需要时间，先为您出单，若不够可再下单"<br>
+<span class="tit_font">四、保质期标准：</span><br>
+1、青龙及花螺/花甲/鲍鱼的咸度不能低于20°<br>
+2、鸡/牛肉/玉米饺子/午餐肉展示柜售卖时间为2天，超过2天转做员工餐<br>
+3、肉类冰箱0至6度<br>
+4、蔬菜2～8度<br>
+5、两个底部的小冰箱保鲜3～6度<br>
+</p>
+
+</div>
+
+
+
     <button @click="closePopup" class="popup-close">关闭</button>
   </div>
 </div>
